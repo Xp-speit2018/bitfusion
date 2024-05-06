@@ -28,7 +28,7 @@ def fc(tensor_in, output_channels=1024,
         with get_default_graph().name_scope(act):
             act = _fc
     else:
-        raise ValueError, 'Unknown activation type {}'.format(act)
+        raise ValueError('Unknown activation type {}'.format(act))
 
     return act
 
@@ -56,7 +56,7 @@ def conv(tensor_in, filters=32, stride=None, kernel_size=3, pad='SAME',
         with get_default_graph().name_scope(act):
             act = _conv
     else:
-        raise ValueError, 'Unknown activation type {}'.format(act)
+        raise ValueError('Unknown activation type {}'.format(act))
 
     return act
 
